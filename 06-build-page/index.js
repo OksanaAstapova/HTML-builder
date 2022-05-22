@@ -45,7 +45,7 @@ fs.readdir(style, (err, files) => {
   }
 });
 
-async function creteHtmlPage() {
+async function createHtml() {
   template.on('data', data => {
     string = data.toString();
     fs.readdir(components, {
@@ -65,4 +65,4 @@ async function creteHtmlPage() {
     });
   });
 }
-creteHtmlPage();
+createHtml();
